@@ -22,31 +22,69 @@
             }
           },
           {
-            "id": "312ddf314a464fb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Introduction/01_introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_introduction"
-            }
-          },
-          {
             "id": "7461de859cad8a53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_lajolla/02_lajolla.md",
+                "file": "概述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_lajolla"
+              "title": "概述"
+            }
+          },
+          {
+            "id": "5db733bea7ccb2e5",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "02_lajolla/02_lajolla/Pasted-image-20260408194157.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted-image-20260408194157"
+            }
+          },
+          {
+            "id": "0e12becec735ff0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "概述.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "概述"
+            }
+          },
+          {
+            "id": "018ae1bba5f24a5a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "02_lajolla/02_lajolla/Pasted-image-20260408194157.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted-image-20260408194157"
+            }
+          },
+          {
+            "id": "cddac40f05ac1596",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "概述.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "概述"
             }
           }
         ],
@@ -212,22 +250,28 @@
       "bases:新建数据库": false
     }
   },
-  "active": "09798bbf938ab38b",
+  "active": "7461de859cad8a53",
   "lastOpenFiles": [
-    "02_lajolla/02_lajolla.md",
     "01_Introduction/01_introduction.md",
-    "Pasted image 20260408194157.png",
-    "Pasted image 20260408193903.png",
-    "Pasted image 20260408193831.png",
-    "Pasted image 20260408193803.png",
-    "Pasted image 20260408193740.png",
-    "Pasted image 20260408165153.png",
-    "Pasted image 20260408165006.png",
-    "Pasted image 20260408164037.png",
-    "Pasted image 20260408163848.png",
-    "Pasted image 20260408163758.png",
-    "02_lajolla",
+    "Image/Pasted image 20260405205744.png",
+    "02_lajolla/02_lajolla.md",
+    "02_lajolla/02_lajolla",
     "概述.md",
+    "01_Introduction/01_introduction",
+    "01_Introduction/01_introduction/Pasted-image-20260405204906.png",
+    "Image/Pasted.md",
+    "02_lajolla/02_lajolla/Pasted-image-20260408193903.png",
+    "02_lajolla/02_lajolla/Pasted-image-20260408194157.png",
+    "未命名.md",
+    "Image",
+    "01_Introduction/01_introduction/Pasted-image-20260405205357.png",
+    "Image",
+    "02_lajolla/02_lajolla/Pasted-image-20260408193831.png",
+    "02_lajolla/02_lajolla/Pasted-image-20260408193803.png",
+    "02_lajolla/02_lajolla/Pasted-image-20260408193740.png",
+    "02_lajolla/02_lajolla/Pasted-image-20260408165153.png",
+    "02_lajolla/02_lajolla/Pasted-image-20260408165006.png",
+    "02_lajolla",
     "01_Introduction"
   ]
 }
