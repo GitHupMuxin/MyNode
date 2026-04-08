@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "1084ddda1cbccf91",
+    "type": "split",
+    "children": [
+      {
+        "id": "358e17e8870bf314",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0f16a738c18ecef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vulkan/Vulkan Tutorial 读书笔记.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vulkan Tutorial 读书笔记"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ff5e8c8240cef910",
+    "type": "split",
+    "children": [
+      {
+        "id": "7dddc0f4669c060f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e4fe50d37e2f09d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6076d7da4d69638e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "bd88e8f506291bd6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "379b3ca13d2e3352",
+    "type": "split",
+    "children": [
+      {
+        "id": "99dde4fe8c558f5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "600adc3ecfb72b40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "欢迎.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "欢迎 的反向链接列表"
+            }
+          },
+          {
+            "id": "443c1d3fc625f699",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "欢迎.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "欢迎 的出链列表"
+            }
+          },
+          {
+            "id": "7f9f0fa22dba32e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ba39af3bff9592fd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "欢迎.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "欢迎 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "6e4fe50d37e2f09d",
+  "lastOpenFiles": [
+    "未命名.base",
+    "UCSD CSE 272 Advanced Image Synthesis/Introduction.md",
+    "vulkan/Vulkan Tutorial 读书笔记.md",
+    "2026-04-04.md",
+    "未命名.md",
+    "欢迎.md",
+    "未命名 1.base",
+    "未命名",
+    "UCSD CSE 272 Advanced Image Synthesis",
+    "vulkan/vulkan gltf load.md",
+    "vulkan",
+    "Vulkan流程.md",
+    "Vulkan结构.md",
+    "VkSurfaceCapabilitiesKHR.md",
+    "Creating an instance.md",
+    "创建链接.md"
+  ]
+}
