@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Introduction/01_Introduction.md",
+                "file": "01_introduction/01_introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Introduction"
+              "title": "01_introduction"
             }
           }
         ]
@@ -186,24 +186,24 @@
   "active": "35c1e2b66b5826f9",
   "lastOpenFiles": [
     "概述.md",
-    "01_Introduction/01_Introduction.md",
+    "01_introduction/01_introduction.md",
     "02_lajolla/02_lajolla/Pasted-image-20260408194157.png",
-    "01_Introduction/01_Introduction/Pasted-image-20260408161215.png",
-    "01_Introduction/01_Introduction/Pasted-image-20260405210201.png",
-    "01_Introduction/01_Introduction/Pasted-image-20260405205213.png",
-    "01_Introduction/01_Introduction/image-2026481827977.png",
-    "01_Introduction/01_Introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg",
-    "01_Introduction/01_Introduction/Pasted-image-20260405205118.png",
+    "01_introduction/01_introduction/Pasted-image-20260408161215.png",
+    "01_introduction/01_introduction/Pasted-image-20260405210201.png",
+    "01_introduction/01_introduction/Pasted-image-20260405205213.png",
+    "01_introduction/01_introduction/image-2026481827977.png",
+    "01_introduction/01_introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg",
+    "01_introduction/01_introduction/Pasted-image-20260405205118.png",
     "02_lajolla/02_lajolla.md",
     "Image",
     "Image/Pasted image 20260405205744.png",
     "02_lajolla/02_lajolla",
-    "01_Introduction/01_Introduction",
-    "01_Introduction/01_Introduction/Pasted-image-20260405204906.png",
+    "01_introduction/01_introduction",
+    "01_introduction/01_introduction/Pasted-image-20260405204906.png",
     "Image/Pasted.md",
     "02_lajolla/02_lajolla/Pasted-image-20260408193903.png",
     "未命名.md",
     "02_lajolla",
-    "01_Introduction"
+    "01_introduction"
   ]
 }

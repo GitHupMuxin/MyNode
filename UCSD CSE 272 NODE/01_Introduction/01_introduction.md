@@ -1,7 +1,7 @@
 # 课程PPT链接： 
 [cseweb.ucsd.edu/~tzli/cse272/wi2024/lectures/01_introduction.pdf](https://cseweb.ucsd.edu/~tzli/cse272/wi2024/lectures/01_introduction.pdf)
 这个课程是一个 extremely hard-core about advanced rendering。所以其内容还是比较困难的，需要做好心理准备。
-![Pasted-image-20260405204906.png](01_Introduction/Pasted-image-20260405204906.png)
+![Pasted-image-20260405204906.png](01_introduction/Pasted-image-20260405204906.png)
 
 课程使用 Lajolla 这个源代码进行渲染
 github: https://github.com/BachiLi/lajolla_public
@@ -50,42 +50,42 @@ github: https://github.com/BachiLi/lajolla_public
 ## 像素着色
 具体知识点为：**基于三角形滤波的光线采样**
 对于一个像素来说，其着色应该是该像素”收到“的能量。即
-![Pasted-image-20260405205118.png](01_Introduction/Pasted-image-20260405205118.png)
+![Pasted-image-20260405205118.png](01_introduction/Pasted-image-20260405205118.png)
 对于计算机来说，要计算该数值，我们只能采样，这样就变成了一个离散的求和。即**黎曼积分**。
-![Pasted-image-20260405205213.png](01_Introduction/Pasted-image-20260405205213.png)
+![Pasted-image-20260405205213.png](01_introduction/01_introduction/Pasted-image-20260405205213.png)
 现在问题就变成了**采样和估计，主要矛盾是：如何正确且快速的去估计该像素的颜色**
-![Pasted-image-20260405205357.png](01_Introduction/Pasted-image-20260405205357.png)
+![Pasted-image-20260405205357.png](01_introduction/Pasted-image-20260405205357.png)
 于是就有了**重要性采样**
 重要性采样在 games 101 在有详细的介绍一种方式：即在计算直接光照时对光源的采样。
 为了**物理的正确性**，我们需要一种方法将积分进行转换，于是运用了**换元积分法**。
 于是：
-![Pasted-image-20260405205820.png](01_Introduction/Pasted-image-20260405205820.png)
+![Pasted-image-20260405205820.png](01_introduction/Pasted-image-20260405205820.png)
 如果你理解了上述内容后续的估计都能看懂了
 你也可以认为，**黎曼积分是一种采样概率为面积分之一的均匀采样的蒙特卡罗积分。**
 
 **三角形滤波将一个原本应该进行均匀采样的黎曼积分变成了一个中间采样概率大，周边采样概率小的一个蒙特卡罗积分。
-![Pasted-image-20260405210059.png](01_Introduction/Pasted-image-20260405210059.png)
+![Pasted-image-20260405210059.png](01_introduction/Pasted-image-20260405210059.png)
 然后再结合蒙特卡罗积分**
-![Pasted-image-20260405210201.png](01_Introduction/Pasted-image-20260405210201.png)
+![Pasted-image-20260405210201.png](01_introduction/Pasted-image-20260405210201.png)
 ## 概率分布的生成
 如果你考研时概率论跟的是张宇，那么你应该会很熟悉一个内容，就是任何一个分布的分布函数会服从U(0 ~ 1)。而计算机生成，U(0 ~ 1)很方便，于是就有了通过反函数反求随机变量的一种方式。即**逆变换采样法**
 以常用的在**球上均匀采样**为例上我的灵魂书写：
-!![9fbe09631e5827cd4b0fbd7226509b54.jpg](01_Introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg)
+!![9fbe09631e5827cd4b0fbd7226509b54.jpg](01_introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg)
 
 
 ## BSDF
 如果你和我一样只接触了games 101 202那么你对 BSDF不一定认识。
 首先是大名鼎鼎的菲涅尔定理决定了反射和折射的方向：
-![Pasted-image-20260405211814.png](01_Introduction/Pasted-image-20260405211814.png)
+![Pasted-image-20260405211814.png](01_introduction/Pasted-image-20260405211814.png)
 对于多少能量反射多少能量折射，则引入一个折射率，使用Schlick's approximation
-![Pasted-image-20260405211901.png](01_Introduction/Pasted-image-20260405211901.png)
+![Pasted-image-20260405211901.png](01_introduction/Pasted-image-20260405211901.png)
 上述为前情提要。
 ## 代码实现思想：
 ### 如何得到切线方向
 通过数学方式得到切线方向
-![Pasted-image-20260408154000.png](01_Introduction/Pasted-image-20260408154000.png)
+![Pasted-image-20260408154000.png](01_introduction/Pasted-image-20260408154000.png)
 以下是另一种推导
-![Pasted-image-20260408161215.png](01_Introduction/Pasted-image-20260408161215.png)
+![Pasted-image-20260408161215.png](01_introduction/Pasted-image-20260408161215.png)
 这时候，根据菲尼尔定理，我们可以得到sinθt 和对应的cosθt，同时，平面的法向量N是已知的。
 由于L和T都是单位向量这时候我们只需要知道G方向即可得到折射方向。
 对于折射方向，分解成于-N方向和-G方向的两个向量。对于-N方向的向量方向是已知，大小为cosθt。-G方向的向量方向未知，但大小为sinθt。这时候G方向和perpNL 方向相同，即G = (L - dot(L,N) * N) / sinθL
