@@ -1,7 +1,7 @@
 # 课程PPT链接： 
 [cseweb.ucsd.edu/~tzli/cse272/wi2024/lectures/01_introduction.pdf](https://cseweb.ucsd.edu/~tzli/cse272/wi2024/lectures/01_introduction.pdf)
 这个课程是一个 extremely hard-core about advanced rendering。所以其内容还是比较困难的，需要做好心理准备。
-![Pasted-image-20260405204906.png](01_introduction/Pasted-image-20260405204906.png)
+![Pasted-image-20260405204906.png](01_Introduction/Pasted-image-20260405204906.png)
 
 课程使用 Lajolla 这个源代码进行渲染
 github: https://github.com/BachiLi/lajolla_public
