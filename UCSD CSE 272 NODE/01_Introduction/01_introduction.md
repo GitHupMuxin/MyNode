@@ -52,7 +52,7 @@ github: https://github.com/BachiLi/lajolla_public
 对于一个像素来说，其着色应该是该像素”收到“的能量。即
 ![Pasted-image-20260405205118.png](01_introduction/Pasted-image-20260405205118.png)
 对于计算机来说，要计算该数值，我们只能采样，这样就变成了一个离散的求和。即**黎曼积分**。
-![Pasted-image-20260405205213.png](01_introduction/01_introduction/Pasted-image-20260405205213.png)
+![Pasted-image-20260405205213.png](01_introduction/Pasted-image-20260405205213.png)
 现在问题就变成了**采样和估计，主要矛盾是：如何正确且快速的去估计该像素的颜色**
 ![Pasted-image-20260405205357.png](01_introduction/Pasted-image-20260405205357.png)
 于是就有了**重要性采样**
