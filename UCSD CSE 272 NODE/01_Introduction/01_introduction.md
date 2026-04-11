@@ -72,11 +72,9 @@ github: https://github.com/BachiLi/lajolla_public
 以常用的在**球上均匀采样**为例:
 球的表达式 
 $$
-\begin{aligned}
-\qquad x &= \sin(\theta)\, \cos(\phi) \\
-\qquad y &= \sin(\theta)\, \sin(\phi) \\
-\qquad z &= \cos(\theta) \\\\
-\end{aligned}
+\qquad x = \sin(\theta)\, \cos(\phi) 
+\qquad y = \sin(\theta)\, \sin(\phi) 
+\qquad z = \cos(\theta) 
 $$
 
 在球面进行均匀采样故设
@@ -86,27 +84,15 @@ $$
 
 通过归一性计算C
 $$
-\begin{aligned}
-\int_{\Omega} P(\omega) \ d\omega &= 1 \\\\
-\int_0^{2\pi}d\phi \int_0^{\pi} C \ *\ \sin(\theta) \ d\theta &= 1\\\\
-&= 2\pi \ *\ C \ *\ 2 \\\\
-&= 4\pi \ *\ C \ =\ 1 
-\end{aligned}
+\int_{\Omega} P(\omega) \ d\omega
+\int_0^{2\pi}d\phi \int_0^{\pi} C \ *\ \sin(\theta) \ d\theta = 1
 $$
 即 $C = \frac{1}{4\pi}$
 故对于 $\theta,\phi$ ，其联合概率密度为 $P(\theta,\phi) = \frac{\sin(\theta)}{4\pi}$
 求 $\theta$ 的边缘概率密度
 $$
-\begin{aligned}
-f(\theta) &= \int_0^{2\pi} \frac{\sin(\theta)}{4\pi}\ d\phi \\\\
-&= \frac{\sin(\theta)}{2}
-\end{aligned}
-$$
-求 $\theta$ 的边缘概率密度函数
-$$
-\begin{aligned}
-f(\theta) &= \int_0^{2\pi} \frac{\sin(\theta)}{4\pi} \ d\phi = \frac{\sin(\theta)}{2}
-\end{aligned}
+f(\theta) = \int_0^{2\pi} \frac{\sin(\theta)}{4\pi}\ d\phi \\\\
+= \frac{\sin(\theta)}{2}
 $$
 求 $\theta$ 的概率分布函数
 $$

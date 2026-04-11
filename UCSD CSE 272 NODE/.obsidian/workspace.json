@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_introduction/01_introduction.md",
+                "file": "02_lajolla/02_lajolla.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_introduction"
+              "title": "02_lajolla"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "717c36b2b4f15710",
   "lastOpenFiles": [
-    "02_lajolla/02_lajolla.md",
     "01_introduction/01_introduction.md",
+    "02_lajolla/02_lajolla.md",
     "概述.md",
     "02_lajolla/02_lajolla/Pasted-image-20260408194157.png",
     "01_introduction/01_introduction/Pasted-image-20260408161215.png",

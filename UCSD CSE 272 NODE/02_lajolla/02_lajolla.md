@@ -83,13 +83,13 @@ $$
 
 ### 无偏性证明
 $$
-\begin{aligned}
 \mathbf{E}[\hat{I}] 
-&= \frac{1}{n} \sum_{i=1}^n \mathbb{E}\left[ \frac{g(\omega_i)}{p(\omega_i)} \right] \\
-&= \mathbf{E}\left[ \frac{g(\omega)}{p(\omega)} \right] \quad (\omega \sim p) \\
-&= \int_{\Omega^+} \frac{g(\omega)}{p(\omega)} \, p(\omega) \, d\omega \\
-&= \int_{\Omega^+} g(\omega) \, d\omega = I
-\end{aligned}
+= \frac{1}{n} \sum_{i=1}^n \mathbb{E}\left[ \frac{g(\omega_i)}{p(\omega_i)} \right] 
+= \mathbf{E}\left[ \frac{g(\omega)}{p(\omega)} \right] 
+= \int_{\Omega^+} \frac{g(\omega)}{p(\omega)} \, p(\omega) \, d\omega \\
+= \int_{\Omega^+} g(\omega) \, d\omega = I
+\qquad
+(\omega \sim p) 
 $$
 因此 $\mathbb{E}[\hat{I}] = I$，估计量无偏。
 
@@ -102,20 +102,26 @@ L_o(\omega_o) = \int_{\Omega^+} L_i(\omega_i) \, f_r(\omega_i, \omega_o, n) \, c
 $$
 对于余弦加权半球采样：有球表达式
 $$
-\begin{aligned}
-&\qquad x = \sin(\theta)\, \cos(\phi) \\
-&\qquad y = \sin(\theta)\, \sin(\phi) \\
-&\qquad z = \cos(\theta) \\ \\
-&\qquad P(\omega) = C\  * \ cos(\phi) \qquad (C 为常数) \\ \\
-\text故有 \\[2ex] 
-&\qquad \int_{\Omega^+} P(\omega)\ d\omega = 1 \\ \\
-&\qquad \int_{\Omega^+} C \cos(\theta) \ d\omega_i = 1 \\ \\
-&\qquad  \int_{0}^{2\pi}d\phi \int_{0}^{\pi / 2} C\ \cos(\theta)\ \sin(\theta)\ d\theta = 1 \\ \\
-\text 解得 \\ \\ 
-&\qquad  C = \frac{1}{\pi} \\\\
-\text 即
-&\qquad P(\omega) = \frac{\cos(\theta)}{\pi}
-\end{aligned}
+x = \sin(\theta)\, \cos(\phi) 
+y = \sin(\theta)\, \sin(\phi) 
+z = \cos(\theta) 
+$$
+$$
+P(\omega) = C\  * \ cos(\phi) \qquad (C 为常数)
+$$
+故有
+$$
+\int_{\Omega^+} P(\omega)\ d\omega = 
+\int_{\Omega^+} C \cos(\theta) \ d\omega_i =
+\int_{0}^{2\pi}d\phi \int_{0}^{\pi / 2} C\ \cos(\theta)\ \sin(\theta)\ d\theta = 1
+$$
+解得
+$$
+C = \frac{1}{\pi}
+$$
+即
+$$
+P(\omega) = \frac{\cos(\theta)}{\pi}
 $$
 #### 蒙特卡洛估计量
 抽取 $n$ 个独立样本 $\omega_1,\dots,\omega_n$：
@@ -124,13 +130,17 @@ $$
 $$
 #### 无偏性证明
 $$
-\begin{aligned}
 \mathbf{E}[\hat{I}]
-&= \frac{1}{n} \sum_{i = 1}^n \mathbf{E}\left[ \frac{L_i(\omega_i)\ f_r(w_i,\ w_o,\ n)\ \cos(\theta_i)}{\frac{cos(\theta_i)}{\pi}} \right] \\\\
-&= \mathbf{E} \left[ \frac{L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i)}{\frac{\cos(\theta_i)}{\pi}} \right] \\\\
-&= \int_{\Omega^+} \frac{L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i)}{\frac{\cos(\theta_i)}{\pi}} \ * \ \frac{\cos(\theta_i)}{\pi} \  d\omega_i \\\\ 
-&= \int_{\Omega^+} L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i) \  d\omega_i = I
- \end{aligned}
+= \frac{1}{n} \sum_{i = 1}^n \mathbf{E}\left[ \frac{L_i(\omega_i)\ f_r(w_i,\ w_o,\ n)\ \cos(\theta_i)}{\frac{cos(\theta_i)}{\pi}} \right]
+$$
+$$
+= \mathbf{E} \left[ \frac{L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i)}{\frac{\cos(\theta_i)}{\pi}} \right] 
+$$
+ $$
+= \int_{\Omega^+} \frac{L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i)}{\frac{\cos(\theta_i)}{\pi}} \ * \ \frac{\cos(\theta_i)}{\pi} \  d\omega_i 
+$$
+$$
+= \int_{\Omega^+} L(\omega_i)\ f_r(\omega_i,\ \omega_o,\  n)\ \cos(\theta_i) \  d\omega_i = I
 $$
 因此 $\mathbb{E}[\hat{I}] = I$，估计量无偏。
 ### 多重重要性采样中的期望计算
@@ -229,12 +239,14 @@ $$
 ##### 期望验证（无偏性）
 
 $$
-\begin{aligned}
-\mathbf{E}[\hat{I}_{\text{MIS}}] &= \sum_{i=1}^k \sum_{j=1}^{n_i} \mathbf{E}\left[ \frac{f(\omega_{i,j})}{\sum_{\ell} n_\ell p_\ell(\omega_{i,j})} \right] \\
-&= \sum_{i=1}^k n_i \int \frac{f(\omega)}{\sum_{\ell} n_\ell p_\ell(\omega)} \, p_i(\omega) \, d\omega \\
-&= \int \frac{f(\omega)}{\sum_{\ell} n_\ell p_\ell(\omega)} \left( \sum_{i=1}^k n_i p_i(\omega) \right) d\omega \\
-&= \int f(\omega) \, d\omega = I.
-\end{aligned}
+\mathbf{E}[\hat{I}_{\text{MIS}}] = \sum_{i=1}^k \sum_{j=1}^{n_i} \mathbf{E}\left[ \frac{f(\omega_{i,j})}{\sum_{\ell} n_\ell p_\ell(\omega_{i,j})} \right] \\
+= \sum_{i=1}^k n_i \int \frac{f(\omega)}{\sum_{\ell} n_\ell p_\ell(\omega)} \, p_i(\omega) \, d\omega 
+$$
+$$
+= \int \frac{f(\omega)}{\sum_{\ell} n_\ell p_\ell(\omega)} \left( \sum_{i=1}^k n_i p_i(\omega) \right) d\omega 
+$$
+$$
+= \int f(\omega) \, d\omega = I.
 $$
 
 因此估计量无偏。
