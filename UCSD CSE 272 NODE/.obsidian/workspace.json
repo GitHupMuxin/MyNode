@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_lajolla/02_lajolla.md",
+                "file": "01_introduction/01_introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_lajolla"
+              "title": "01_introduction"
             }
           }
         ],
@@ -200,8 +200,12 @@
   },
   "active": "717c36b2b4f15710",
   "lastOpenFiles": [
-    "01_introduction/01_introduction.md",
     "02_lajolla/02_lajolla.md",
+    "02_lajolla/02_lajolla/image-20264111925380.png",
+    "02_lajolla/02_lajolla/image-20264111823254.png",
+    "01_introduction/01_introduction.md",
+    "01_introduction/01_introduction/image-20264111733498.png",
+    "Image",
     "概述.md",
     "02_lajolla/02_lajolla/Pasted-image-20260408194157.png",
     "01_introduction/01_introduction/Pasted-image-20260408161215.png",
@@ -210,13 +214,9 @@
     "01_introduction/01_introduction/image-2026481827977.png",
     "01_introduction/01_introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg",
     "01_introduction/01_introduction/Pasted-image-20260405205118.png",
-    "Image",
-    "Image/Pasted image 20260405205744.png",
     "02_lajolla/02_lajolla",
     "01_introduction/01_introduction",
-    "01_introduction/01_introduction/Pasted-image-20260405204906.png",
     "Image/Pasted.md",
-    "02_lajolla/02_lajolla/Pasted-image-20260408193903.png",
     "未命名.md",
     "02_lajolla",
     "01_introduction"
