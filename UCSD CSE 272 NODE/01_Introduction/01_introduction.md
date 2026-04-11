@@ -69,10 +69,57 @@ github: https://github.com/BachiLi/lajolla_public
 ![Pasted-image-20260405210201.png](01_introduction/Pasted-image-20260405210201.png)
 ## 概率分布的生成
 如果你考研时概率论跟的是张宇，那么你应该会很熟悉一个内容，就是任何一个分布的分布函数会服从U(0 ~ 1)。而计算机生成，U(0 ~ 1)很方便，于是就有了通过反函数反求随机变量的一种方式。即**逆变换采样法**
-以常用的在**球上均匀采样**为例上我的灵魂书写：
-!![9fbe09631e5827cd4b0fbd7226509b54.jpg](01_introduction/9fbe09631e5827cd4b0fbd7226509b54.jpg)
+以常用的在**球上均匀采样**为例:
+球的表达式 
+$$
+\begin{aligned}
+\qquad x &= \sin(\theta)\, \cos(\phi) \\
+\qquad y &= \sin(\theta)\, \sin(\phi) \\
+\qquad z &= \cos(\theta) \\\\
+\end{aligned}
+$$
 
+在球面进行均匀采样故设
+$$
+P(\omega) = C \qquad (C为常数)
+$$
 
+通过归一性计算C
+$$
+\begin{aligned}
+\int_{\Omega} P(\omega) \ d\omega &= 1 \\\\
+\int_0^{2\pi}d\phi \int_0^{\pi} C \ *\ \sin(\theta) \ d\theta &= 1\\\\
+&= 2\pi \ *\ C \ *\ 2 \\\\
+&= 4\pi \ *\ C \ =\ 1 
+\end{aligned}
+$$
+即 $C = \frac{1}{4\pi}$
+故对于 $\theta,\phi$ ，其联合概率密度为 $P(\theta,\phi) = \frac{\sin(\theta)}{4\pi}$
+求 $\theta$ 的边缘概率密度
+$$
+\begin{aligned}
+f(\theta) &= \int_0^{2\pi} \frac{\sin(\theta)}{4\pi}\ d\phi \\\\
+&= \frac{\sin(\theta)}{2}
+\end{aligned}
+$$
+求 $\theta$ 的边缘概率密度函数
+$$
+\begin{aligned}
+f(\theta) &= \int_0^{2\pi} \frac{\sin(\theta)}{4\pi} \ d\phi = \frac{\sin(\theta)}{2}
+\end{aligned}
+$$
+求 $\theta$ 的概率分布函数
+$$
+F(\theta) = \int_0^\theta \frac{\sin(u)}{2}\ du = \frac{1 - \cos(\theta)}{2}
+$$
+求 $\phi$ 的边缘概率密度函数
+$$
+\Phi(\phi) = \int_0^\pi \frac{\sin(\theta)}{4\pi} \ d\theta = \frac{1}{2\pi}
+$$
+显然 $\phi \ 服从 \  U ~ (0, 2\pi)$
+故设 $\xi_1 \  服从 \  U(0, 1)$， 有 $\phi = 2\pi\xi_1$
+对于 $\theta$ 设 $u = F(\theta) = \frac{1 - cos(\theta)}{2}$ 解得 $\theta = \arccos(1 - 2u), u \ 服从\ U(0, 1)$
+故设$\xi_2 \ 服从 \ U(0, 1), \ 有 \theta = \arccos(1 - 2\xi_2)$
 ## BSDF
 如果你和我一样只接触了games 101 202那么你对 BSDF不一定认识。
 首先是大名鼎鼎的菲涅尔定理决定了反射和折射的方向：
