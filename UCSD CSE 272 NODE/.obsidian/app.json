@@ -1,0 +1,7 @@
+{
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./image",
+  "newLinkFormat": "relative",
+  "vimMode": false
+}
